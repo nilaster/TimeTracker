@@ -1,26 +1,30 @@
 {
   "expo": {
-    "name": "TimeTracker",
-    "slug": "TimeTracker",
+    "name": "Time Tracker",
+    "slug": "time-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#f8f9fa"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.timetracker"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#f8f9fa"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.yourcompany.timetracker",
+      "permissions": []
     },
     "web": {
       "favicon": "./assets/favicon.png"
