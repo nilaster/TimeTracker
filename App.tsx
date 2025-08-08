@@ -222,7 +222,7 @@ export default function App() {
       </View>
 
       {/* Timer Display */}
-      <View style={styles.timerSection}>
+      <View style={[styles.timerSection, editingTime && { flex: 0 }]}>
         {editingTime ? (
           <View style={styles.editTimeContainer}>
             <Text style={styles.editLabel}>Edit Time</Text>
